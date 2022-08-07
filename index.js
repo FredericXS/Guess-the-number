@@ -5,6 +5,11 @@ const range = Number(
     prompt("Want to guess a number that varies by how much? [e.g. 0 - 100]: ")
 );
 
+if (Number.isNaN(range)) {
+    console.log("Please enter a valid number!".red);
+    process.exit(1);
+}
+
 let attempts = 5;
 
 function guessTheNumber() {
