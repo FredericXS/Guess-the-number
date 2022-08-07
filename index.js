@@ -7,7 +7,7 @@ const range = Number(
 
 if (Number.isNaN(range)) {
     console.log("Please enter a valid number!".red);
-    process.exit(1);
+    process.exit();
 }
 
 let attempts = 5;
@@ -29,8 +29,14 @@ function guessTheNumber() {
                 break;
             } else {
                 attempts--;
-                console.log(`Wrong answer! You have more ${attempts} attempts`.red);
-                continue;
+                if (attempts === 0) {
+                    console.log('This is your last attempt!'.red);
+                    continue
+                } else {
+                    console.log(`Wrong answer! You have more ${attempts} attempts`.red);
+                    continue;
+                }
+                
             }
         }
     }
