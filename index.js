@@ -28,8 +28,8 @@ function guessTheNumber() {
                 console.log(`I thought in the number ${numberGuess}`.yellow)
                 break;
             } else {
-                console.log(`Wrong answer! You have more ${attempts} attempts`.red);
                 attempts--;
+                console.log(`Wrong answer! You have more ${attempts} attempts`.red);
                 continue;
             }
         }
