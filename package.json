@@ -1,0 +1,15 @@
+{
+  "name": "guess-the-number",
+  "version": "1.0.0",
+  "description": "Choose a range to guess a random number",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "FredericXS",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
