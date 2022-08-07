@@ -43,4 +43,4 @@ npm start
 * Choose a range for numbers
 * Try to guess the random number
 * Enjoy :)
-> <img src="https://imgur.com/QUFKhre.jpeg"
+> <img src="https://imgur.com/QUFKhre.jpeg">
