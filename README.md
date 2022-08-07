@@ -18,11 +18,11 @@
 * Download and install [Visual Studio Code](https://code.visualstudio.com)
 * Open your terminal and clone the project to your PC:
 ```
-git clone https://github.com/FredericXS/guess-the-number
+git clone https://github.com/FredericXS/Guess-the-number
 ```
 * Enter in the project folder:
 ```
-cd guess-the-number
+cd Guess-the-number
 ```
 * Install npm dependencies:
 ```
