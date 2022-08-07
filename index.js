@@ -28,15 +28,9 @@ function guessTheNumber() {
                 console.log(`I thought in the number ${numberGuess}`.yellow)
                 break;
             } else {
+                console.log(`Wrong answer! You have more ${attempts} attempts`.red);
                 attempts--;
-                if (attempts === 0) {
-                    console.log('This is your last attempt!'.red);
-                    continue
-                } else {
-                    console.log(`Wrong answer! You have more ${attempts} attempts`.red);
-                    continue;
-                }
-                
+                continue;
             }
         }
     }
