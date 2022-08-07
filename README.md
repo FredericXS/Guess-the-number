@@ -1,7 +1,7 @@
 <h1 align="center">Guess the number</h1>
 
 ## Description
-<p align="center">A simple game to guess a number in a custom range of numbers.</p>
+<p align="center">A simple game to guess a number in a custom range of numbers. Created in Node.js</p>
 
 ## Summary
 <!--ts-->
