@@ -2,11 +2,11 @@ const prompt = require('prompt-sync')();
 const colors = require('colors');
 
 const range = Number(
-    prompt("Want to guess a number that varies by how much? [e.g. 0 - 100]: ")
+    prompt('Want to guess a number that varies by how much? [e.g. 0 - 100]: ');
 );
 
 if (Number.isNaN(range)) {
-    console.log("Please enter a valid number!".red);
+    console.log('Please enter a valid number!'.red);
     process.exit();
 }
 
@@ -17,7 +17,7 @@ function guessTheNumber() {
     attempts = 5;
 
     while (true) {
-        const guess = Number(prompt("What number am I thinking? ".blue));
+        const guess = Number(prompt('What number am I thinking? '.blue));
 
         if (guess === numberGuess) {
             console.log(`Nice! You're right. Congrats!`.green);
@@ -40,14 +40,14 @@ guessTheNumber();
 
 
 while (true) {
-    const repeat = prompt("Want to repeat the game? [y/n]: ");
+    const repeat = prompt('Want to repeat the game? [y/n]: ');
     if (repeat === 'yes' || repeat === 'y') {
         guessTheNumber();
     } else if (repeat === 'not' || repeat === 'no' || repeat === 'n') {
-        console.log("See you in next time. Bye!");
+        console.log('See you in next time. Bye!');
         break;
     } else {
-        console.log("Sorry, but I don't understood. Can You say again?");
+        console.log('Sorry, but I don\'t understood. Can You say again?');
         continue;
     }
 }
